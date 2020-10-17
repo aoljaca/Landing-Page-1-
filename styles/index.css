@@ -1,0 +1,227 @@
+body {
+  background: rgba(0,0,0,.2);
+  margin: 0;
+}
+
+#header-img {
+  max-width: 90px;
+}
+
+#nav-container {
+  width: 100%;
+  font-size: 24px;
+  position: relative;
+  background: white;
+}
+
+#nav-content {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+#nav-content-left {
+  width: 100%;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#nav-content-right {
+  position: absolute;
+  right: 30px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 980px) {
+  #nav-content  {
+    flex-direction: column;
+  }
+
+  #nav-content-right {
+    position: relative;
+    display: flex;
+    align-self: center;
+  }
+
+  #nav-content-left {
+    justify-content: center;
+    position: relative;
+    display: flex;
+  }
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+a {
+  color: red;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0 1.5rem;
+  height: 2rem;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1rem black solid;
+  border-radius: 2rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+}
+  
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px 10px 10px 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+  padding-right: 2rem;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #shoes {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+#shoes {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#shirts {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#newsletter {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#lebronjames {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit {
+  cursor: pointer;
+  color: red;
+  margin-right: 1rem;
+}
+
+#Shoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1rem;
+  color: red;
+  margin-bottom: 10px;
+}
+
+hr {width: 100%;margin-top: 6px;margin-right: auto; border-color: gold;}
+
+#Shirts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  margin-bottom: 10px;
+  padding-right: 1rem;
+}
+
+#email {
+  height: 25px
+}
+
+input, input ::-webkit-input-placeholder{
+  font-size: 20px;
+}
